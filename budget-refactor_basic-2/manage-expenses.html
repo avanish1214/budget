@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Expenses</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .back-button {
+            background: #555;
+        }
+        .back-button:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="window.location.href='dashboard.html'">Back</button>
+        <h1>Manage Expenses</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Payid</th>
+                <th>Expenses</th>
+                <th>Receiver</th>
+                <th>DT</th>
+                <th>Sender</th>
+                <th>Type</th>
+                <th>Mode</th>
+                <th>Settlement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row -->
+            <tr>
+                <td>EXP001</td>
+                <td>200</td>
+                <td>Jane Doe</td>
+                <td>2024-08-01</td>
+                <td>John Smith</td>
+                <td>Utility</td>
+                <td>Online</td>
+                <td>Settled</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href='new_expense_form.html'><button>Add New Expense</button></a>
+</body>
+</html>

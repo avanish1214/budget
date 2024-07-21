@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Payment</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            left: 20px;
+            background: #555;
+        }
+        .back-button:hover {
+            background: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="window.location.href='manage-payments.html'">Back</button>
+        <h1>Add New Payment</h1>
+    </header>
+    <form>
+        <label for="payid">Payid</label>
+        <input type="text" id="payid" name="payid" required>
+
+        <label for="expenses">Expenses</label>
+        <input type="number" id="expenses" name="expenses" required>
+
+        <label for="receiver">Receiver</label>
+        <input type="text" id="receiver" name="receiver" required>
+
+        <label for="dt">Date</label>
+        <input type="date" id="dt" name="dt" required>
+
+        <label for="sender">Sender</label>
+        <input type="text" id="sender" name="sender" required>
+
+        <label for="type">Type</label>
+        <input type="text" id="type" name="type" required>
+
+        <label for="mode">Mode</label>
+        <input type="text" id="mode" name="mode" required>
+
+        <label for="settlement">Settlement</label>
+        <input type="text" id="settlement" name="settlement" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
